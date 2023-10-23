@@ -22,7 +22,7 @@ const CardSuggest: FunctionComponent<CardSuggestProps> = (
             {listcontent.split("\n").map((item, index) => (
               <li
                 key={index}
-                className="hover:bg-secondary px-3 rounded-md text-2xl font-medium text-gray-500 hover:text-white"
+                className="hover:bg-secondary px-3 rounded-md text-lg font-medium text-gray-500 hover:text-white"
               >
                 {item}
               </li>
