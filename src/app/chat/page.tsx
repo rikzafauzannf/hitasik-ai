@@ -15,8 +15,103 @@ const Chat = () => {
             soluta doloribus debitis blanditiis ullam quibusdam esse non unde,
             earum maiores rerum laudantium.
           </p>
-          <div className="w-full h-screen border border-double border-2 my-5 p-6 rounded-lg">
-            <div>s</div>
+          <div className="w-full h-screen border border-double border-2 my-5 p-6 rounded-lg items-baseline overflow-auto">
+            <div className="chat chat-start">
+              <div className="chat-header">
+                Obi-Wan Kenobi
+                <time className="text-xs opacity-50">2 hours ago</time>
+              </div>
+              <div className="chat-bubble">You were the Chosen One!</div>
+              <div className="chat-footer opacity-50">Seen</div>
+            </div>
+            <div className="chat chat-end">
+              <div className="chat-header">
+                Obi-Wan Kenobi
+                <time className="text-xs opacity-50">2 hour ago</time>
+              </div>
+              <div className="chat-bubble">I loved you.</div>
+              <div className="chat-footer opacity-50">Delivered</div>
+            </div>
+            <div className="chat chat-start">
+              <div className="chat-header">
+                Obi-Wan Kenobi
+                <time className="text-xs opacity-50">2 hours ago</time>
+              </div>
+              <div className="chat-bubble">You were the Chosen One!</div>
+              <div className="chat-footer opacity-50">Seen</div>
+            </div>
+            <div className="chat chat-end">
+              <div className="chat-header">
+                Obi-Wan Kenobi
+                <time className="text-xs opacity-50">2 hour ago</time>
+              </div>
+              <div className="chat-bubble">I loved you.</div>
+              <div className="chat-footer opacity-50">Delivered</div>
+            </div>
+            <div className="chat chat-start">
+              <div className="chat-header">
+                Obi-Wan Kenobi
+                <time className="text-xs opacity-50">2 hours ago</time>
+              </div>
+              <div className="chat-bubble">You were the Chosen One!</div>
+              <div className="chat-footer opacity-50">Seen</div>
+            </div>
+            <div className="chat chat-end">
+              <div className="chat-header">
+                Obi-Wan Kenobi
+                <time className="text-xs opacity-50">2 hour ago</time>
+              </div>
+              <div className="chat-bubble">I loved you.</div>
+              <div className="chat-footer opacity-50">Delivered</div>
+            </div>
+            <div className="chat chat-start">
+              <div className="chat-header">
+                Obi-Wan Kenobi
+                <time className="text-xs opacity-50">2 hours ago</time>
+              </div>
+              <div className="chat-bubble">You were the Chosen One!</div>
+              <div className="chat-footer opacity-50">Seen</div>
+            </div>
+            <div className="chat chat-end">
+              <div className="chat-header">
+                Obi-Wan Kenobi
+                <time className="text-xs opacity-50">2 hour ago</time>
+              </div>
+              <div className="chat-bubble">I loved you.</div>
+              <div className="chat-footer opacity-50">Delivered</div>
+            </div>
+            <div className="chat chat-start">
+              <div className="chat-header">
+                Obi-Wan Kenobi
+                <time className="text-xs opacity-50">2 hours ago</time>
+              </div>
+              <div className="chat-bubble">You were the Chosen One!</div>
+              <div className="chat-footer opacity-50">Seen</div>
+            </div>
+            <div className="chat chat-end">
+              <div className="chat-header">
+                Obi-Wan Kenobi
+                <time className="text-xs opacity-50">2 hour ago</time>
+              </div>
+              <div className="chat-bubble">I loved you.</div>
+              <div className="chat-footer opacity-50">Delivered</div>
+            </div>
+            <div className="chat chat-start">
+              <div className="chat-header">
+                Obi-Wan Kenobi
+                <time className="text-xs opacity-50">2 hours ago</time>
+              </div>
+              <div className="chat-bubble">You were the Chosen One!</div>
+              <div className="chat-footer opacity-50">Seen</div>
+            </div>
+            <div className="chat chat-end">
+              <div className="chat-header">
+                Obi-Wan Kenobi
+                <time className="text-xs opacity-50">2 hour ago</time>
+              </div>
+              <div className="chat-bubble">I loved you.</div>
+              <div className="chat-footer opacity-50">Delivered</div>
+            </div>
           </div>
           <div className="flex gap-4">
             <input

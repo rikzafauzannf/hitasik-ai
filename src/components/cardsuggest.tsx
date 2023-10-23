@@ -15,7 +15,7 @@ const CardSuggest: FunctionComponent<CardSuggestProps> = (
         <div className="card-body gap-1">
           <h5 className="text-2xl font-semibold">{title}</h5>
           {description && (
-            <p className="text-lg text-gray-500 font-medium">{description}</p>
+            <p className="text-sm text-gray-500 font-light">{description}</p>
           )}
           <hr />
           <ul>
