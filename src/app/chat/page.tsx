@@ -10,10 +10,9 @@ const Chat = () => {
             Tasikmalaya
           </h1>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime
-            illum dignissimos deserunt. Iste repudiandae quam voluptates cum
-            soluta doloribus debitis blanditiis ullam quibusdam esse non unde,
-            earum maiores rerum laudantium.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+            architecto incidunt mollitia nostrum illum! Voluptates sunt
+            repellendus unde itaque tempore.
           </p>
           <div className="w-full h-screen border border-double border-2 my-5 p-6 rounded-lg items-baseline overflow-auto">
             <div className="chat chat-start">
