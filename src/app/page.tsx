@@ -2,15 +2,17 @@
 import Image from "next/image";
 import Typewriter from "typewriter-effect";
 import Link from "next/link";
+import ParticlesBackground from "@/components/Particles/particlesBackground";
 export default function Home() {
   return (
     <>
+      <ParticlesBackground />
       <main className="px-5 md:px-10">
         <div className="w-full h-screen flex justify-center items-center gap-7 flex-col md:flex-row lg:flex-row">
           <img
-            src="vercel.svg"
+            src="next.svg"
             alt=""
-            className="w-56 bg-white p-5 rounded-lg"
+            className="w-52 bg-white p-10 rounded-lg"
           />
           <div className="shadow-sm grid gap-4">
             <h1 className="font-extrabold text-4xl lg:text-6xl">

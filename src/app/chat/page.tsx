@@ -1,8 +1,10 @@
 import React from "react";
 import SuggestChat from "./suggest-chat";
+import ParticlesBackground from "@/components/Particles/particlesBackground";
 const Chat = () => {
   return (
     <>
+      <ParticlesBackground />
       <main className="w-full px-5 md:px-10 py-6 gap-5">
         <div>
           <h1 className="text-2xl font-extrabold">
