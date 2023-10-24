@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const NavbarChat = () => {
   return (
@@ -78,8 +79,8 @@ const NavbarChat = () => {
             </div>
           </button>
           <div className="avatar">
-            <div className="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 ml-6 mr-3">
-              <img src="/profile.jpg" />
+            <div className="rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 ml-4 mr-3">
+              <Image src={"/profile.jpg"} width={30} height={30} alt="" />
             </div>
           </div>
         </div>
