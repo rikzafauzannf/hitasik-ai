@@ -29,7 +29,7 @@ const ParticlesBackground = () => {
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
-      options={particlesConfigs}
+      options={{ particlesConfig }}
     />
   );
 };
