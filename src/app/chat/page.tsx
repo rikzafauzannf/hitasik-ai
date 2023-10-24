@@ -1,130 +1,36 @@
 import React from "react";
 import SuggestChat from "./suggest-chat";
-import ParticlesBackground from "@/components/Particles/particlesBackground";
+import Image from "next/image";
 const Chat = () => {
   return (
     <>
-      <ParticlesBackground />
-      <main className="w-full px-5 md:px-10 py-6 gap-5">
-        <div>
-          <h1 className="text-2xl font-extrabold">
-            <span className="text-primary">Chat.Ai</span> Informasi Kota
-            Tasikmalaya
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-            architecto incidunt mollitia nostrum illum! Voluptates sunt
-            repellendus unde itaque tempore.
-          </p>
-          <div className="w-full h-screen border border-double border-2 my-5 p-6 rounded-lg items-baseline overflow-auto">
-            <div className="chat chat-start">
-              <div className="chat-header">
-                Obi-Wan Kenobi
-                <time className="text-xs opacity-50">2 hours ago</time>
-              </div>
-              <div className="chat-bubble">You were the Chosen One!</div>
-              <div className="chat-footer opacity-50">Seen</div>
+      <main className="w-full px-2 md:px-10 gap-5">
+        <div className="">
+          <div className="flex justify-center items-center my-4 h-1/2 w-full gap-4">
+            <div className="bg-neutral p-4 rounded-lg shadow">
+              <Image src={"/kota.png"} alt="" width={50} height={50} />
             </div>
-            <div className="chat chat-end">
-              <div className="chat-header">
-                Obi-Wan Kenobi
-                <time className="text-xs opacity-50">2 hour ago</time>
-              </div>
-              <div className="chat-bubble">I loved you.</div>
-              <div className="chat-footer opacity-50">Delivered</div>
-            </div>
-            <div className="chat chat-start">
-              <div className="chat-header">
-                Obi-Wan Kenobi
-                <time className="text-xs opacity-50">2 hours ago</time>
-              </div>
-              <div className="chat-bubble">You were the Chosen One!</div>
-              <div className="chat-footer opacity-50">Seen</div>
-            </div>
-            <div className="chat chat-end">
-              <div className="chat-header">
-                Obi-Wan Kenobi
-                <time className="text-xs opacity-50">2 hour ago</time>
-              </div>
-              <div className="chat-bubble">I loved you.</div>
-              <div className="chat-footer opacity-50">Delivered</div>
-            </div>
-            <div className="chat chat-start">
-              <div className="chat-header">
-                Obi-Wan Kenobi
-                <time className="text-xs opacity-50">2 hours ago</time>
-              </div>
-              <div className="chat-bubble">You were the Chosen One!</div>
-              <div className="chat-footer opacity-50">Seen</div>
-            </div>
-            <div className="chat chat-end">
-              <div className="chat-header">
-                Obi-Wan Kenobi
-                <time className="text-xs opacity-50">2 hour ago</time>
-              </div>
-              <div className="chat-bubble">I loved you.</div>
-              <div className="chat-footer opacity-50">Delivered</div>
-            </div>
-            <div className="chat chat-start">
-              <div className="chat-header">
-                Obi-Wan Kenobi
-                <time className="text-xs opacity-50">2 hours ago</time>
-              </div>
-              <div className="chat-bubble">You were the Chosen One!</div>
-              <div className="chat-footer opacity-50">Seen</div>
-            </div>
-            <div className="chat chat-end">
-              <div className="chat-header">
-                Obi-Wan Kenobi
-                <time className="text-xs opacity-50">2 hour ago</time>
-              </div>
-              <div className="chat-bubble">I loved you.</div>
-              <div className="chat-footer opacity-50">Delivered</div>
-            </div>
-            <div className="chat chat-start">
-              <div className="chat-header">
-                Obi-Wan Kenobi
-                <time className="text-xs opacity-50">2 hours ago</time>
-              </div>
-              <div className="chat-bubble">You were the Chosen One!</div>
-              <div className="chat-footer opacity-50">Seen</div>
-            </div>
-            <div className="chat chat-end">
-              <div className="chat-header">
-                Obi-Wan Kenobi
-                <time className="text-xs opacity-50">2 hour ago</time>
-              </div>
-              <div className="chat-bubble">I loved you.</div>
-              <div className="chat-footer opacity-50">Delivered</div>
-            </div>
-            <div className="chat chat-start">
-              <div className="chat-header">
-                Obi-Wan Kenobi
-                <time className="text-xs opacity-50">2 hours ago</time>
-              </div>
-              <div className="chat-bubble">You were the Chosen One!</div>
-              <div className="chat-footer opacity-50">Seen</div>
-            </div>
-            <div className="chat chat-end">
-              <div className="chat-header">
-                Obi-Wan Kenobi
-                <time className="text-xs opacity-50">2 hour ago</time>
-              </div>
-              <div className="chat-bubble">I loved you.</div>
-              <div className="chat-footer opacity-50">Delivered</div>
-            </div>
+            <h1 className="text-4xl font-semibold">HAITASIK</h1>
+            <h1 className="text-2xl font-light px-4  border-primary border rounded-lg">
+              Beta
+            </h1>
           </div>
-          <div className="flex gap-4">
-            <input
-              type="text"
-              placeholder="Type here"
-              className="input input-bordered input-secondary w-full max-w-full"
-            />
-            <button className="w-20 btn btn-secondary">send</button>
+          {/* suggest */}
+          <SuggestChat />
+          <div className="">
+            <div className="w-full p-6 shadow-neutral shadow-lg p-6 rounded-lg">
+              <h1 className="text-lg font-semibold">Chatme..</h1>
+            </div>
+            <div className="flex gap-4 mt-4">
+              <input
+                type="text"
+                placeholder="Type here"
+                className="input input-bordered input-secondary w-full max-w-full"
+              />
+              <button className="w-20 btn btn-secondary">send</button>
+            </div>
           </div>
         </div>
-        {/* suggest */}
-        <SuggestChat />
       </main>
     </>
   );

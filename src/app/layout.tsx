@@ -19,9 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="night">
       <body className={inter.className}>
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
