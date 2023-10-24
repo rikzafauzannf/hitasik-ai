@@ -10,9 +10,11 @@ export default function Home() {
       <main className="px-5 md:px-10">
         <div className="w-full h-screen flex justify-center items-center gap-7 flex-col md:flex-row lg:flex-row">
           <Image
-            src={"/next.svg"}
+            src={"next.svg"}
             alt=""
-            className="w-52 bg-white p-10 rounded-lg"
+            className=" bg-white p-10 rounded-lg"
+            width={500}
+            height={500}
           />
           <div className="shadow-sm grid gap-4">
             <h1 className="font-extrabold text-4xl lg:text-6xl">
