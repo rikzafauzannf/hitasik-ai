@@ -19,17 +19,6 @@ export default function RootLayout({
             <Asside />
           </div>
           <div>{children}</div>
-          {/* <div>
-            <h1 className="text-4xl font-bold mt-5">
-              <Typewriter
-                options={{
-                  strings: ["Diskominfo", "Kota Tasikmalaya"],
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
-            </h1>
-          </div> */}
         </div>
         <FooterChat />
       </body>
