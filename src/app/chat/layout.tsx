@@ -18,18 +18,7 @@ export default function RootLayout({
           <div className="w-96 hidden md:block">
             <Asside />
           </div>
-          <div>{children}</div>
-          {/* <div>
-            <h1 className="text-4xl font-bold mt-5">
-              <Typewriter
-                options={{
-                  strings: ["Diskominfo", "Kota Tasikmalaya"],
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
-            </h1>
-          </div> */}
+          <div className="flex-1">{children}</div>
         </div>
         <FooterChat />
       </body>

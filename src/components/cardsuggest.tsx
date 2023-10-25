@@ -13,7 +13,7 @@ const CardSuggest: FunctionComponent<CardSuggestProps> = (
   const { title, description, listcontent, iconsMe } = props;
   return (
     <>
-      <div className="card border border-4 border-double border-secondary shadow-lg hover:shadow-secondary w-full">
+      <div className="card border border-double border-secondary shadow-lg hover:shadow-secondary w-full">
         <div className="card-body gap-1">
           <div className="flex gap-3 items-center">
             <Image src={iconsMe} alt="" width={50} height={50} />
@@ -26,7 +26,7 @@ const CardSuggest: FunctionComponent<CardSuggestProps> = (
             {listcontent.split("\n").map((item, index) => (
               <li
                 key={index}
-                className="hover:bg-gray-200 bg-gray-500 px-4 py-2 rounded-md text-lg font-light text-gray-500 text-white my-3 hover:text-black"
+                className="hover:bg-gray-200 bg-gray-500 px-4 py-2 rounded-md text-lg font-light text-white my-3 hover:text-black"
               >
                 {item}
               </li>
