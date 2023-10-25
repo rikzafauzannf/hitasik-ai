@@ -10,14 +10,13 @@ interface ChatProps {
   onAddItem: (item: string) => void;
 }
 
-const Chat = ({ onAddItem }: ChatProps) => {
+const Chat: React.FC<ChatProps> = ({ onAddItem }) => {
   const [items, setItems] = useState<string[]>([]);
   const [showSuggestChat, setShowSuggestChat] = useState(true);
 
   const addItem = (item: string) => {
     setItems([...items, item]);
     setShowSuggestChat(false);
-    onAddItem(item);
   };
   return (
     <>
