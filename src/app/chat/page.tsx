@@ -12,10 +12,12 @@ interface ChatProps {
 }
 
 const Chat: React.FC<ChatProps> = ({ onAddItem }) => {
-  const [items, setItems] = useState<string[]>([]); // Definisikan tipe data untuk items sebagai array string
+  const [items, setItems] = useState<string[]>([]);
+  const [showSuggestChat, setShowSuggestChat] = useState(true);
 
   const addItem = (item: string) => {
     setItems([...items, item]);
+    setShowSuggestChat(false);
   };
   return (
     <>
@@ -30,7 +32,7 @@ const Chat: React.FC<ChatProps> = ({ onAddItem }) => {
           </h1>
         </div>
         {/* suggest */}
-        <SuggestChat />
+        {showSuggestChat && <SuggestChat />}
         <div className="w-full p-6 shadow-neutral shadow-lg rounded-lg bg-neutral">
           <h1 className="text-lg font-semibold">Chatme..</h1>
           {items.map((item, index) => (

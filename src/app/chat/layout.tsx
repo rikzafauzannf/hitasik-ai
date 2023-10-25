@@ -18,7 +18,7 @@ export default function RootLayout({
           <div className="w-96 hidden md:block">
             <Asside />
           </div>
-          <div>{children}</div>
+          <div className="flex-1">{children}</div>
         </div>
         <FooterChat />
       </body>
