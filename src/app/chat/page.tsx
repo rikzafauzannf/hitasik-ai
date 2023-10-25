@@ -17,6 +17,7 @@ const Chat: React.FC<ChatProps> = ({ onAddItem }) => {
   const addItem = (item: string) => {
     setItems([...items, item]);
     setShowSuggestChat(false);
+    onAddItem(item);
   };
   return (
     <>
