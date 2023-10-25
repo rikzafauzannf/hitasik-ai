@@ -7,11 +7,11 @@ import ChatBuble from "@/components/Chat/chatsbuble";
 import { useState } from "react";
 
 interface ChatProps {
-  // Definisikan tipe data prop onAddItem sesuai dengan yang diharapkan
   onAddItem: (item: string) => void;
 }
 
-const Chat: React.FC<ChatProps> = ({ onAddItem }) => {
+const Chat: React.FC<ChatProps> = (props: ChatProps) => {
+  const { onAddItem } = props;
   const [items, setItems] = useState<string[]>([]);
   const [showSuggestChat, setShowSuggestChat] = useState(true);
 
