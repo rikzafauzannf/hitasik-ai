@@ -3,9 +3,8 @@ import React from "react";
 import NavbarChat from "@/components/Chat/navbarChat";
 import Asside from "@/components/Chat/asside";
 import FooterChat from "@/components/Chat/footerChat";
-import Typewriter from "typewriter-effect";
 
-export default function RootLayout({
+export default function ChatLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -14,7 +13,7 @@ export default function RootLayout({
     <html lang="en" data-theme="night">
       <body>
         <NavbarChat />
-        <div className="flex flex-row w-full">
+        <div className="flex flex-row w-full h-screen overflow-y-scroll">
           <div className="w-96 hidden md:block">
             <Asside />
           </div>
