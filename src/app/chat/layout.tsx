@@ -13,7 +13,7 @@ export default function ChatLayout({
     <html lang="en" data-theme="night">
       <body>
         <NavbarChat />
-        <div className="flex flex-row w-full h-screen overflow-y-scroll">
+        <div className="flex flex-row w-full">
           <div className="w-96 hidden md:block">
             <Asside />
           </div>
