@@ -11,7 +11,6 @@ interface ChatProps {
 }
 
 const Chat: React.FC<ChatProps> = (props: ChatProps) => {
-  const { onAddItem } = props;
   const [items, setItems] = useState<string[]>([]);
   const [showSuggestChat, setShowSuggestChat] = useState(true);
 
@@ -24,7 +23,7 @@ const Chat: React.FC<ChatProps> = (props: ChatProps) => {
       <main className="w-full px-2 md:px-10 gap-5">
         <div className="flex justify-center items-center my-4 h-1/2 w-full gap-4">
           <div className="bg-neutral p-4 rounded-lg shadow">
-            <Image src={"/kota.png"} alt="" width={50} height={50} />
+            <Image src={"/kota.png"} alt="" width={60} height={60} />
           </div>
           <h1 className="text-4xl font-semibold">HAITASIK</h1>
           <h1 className="text-2xl font-light px-4  border-primary border rounded-lg">

@@ -16,7 +16,7 @@ const ChatBuble: FunctionComponent<ChatBubleProps> = (
             <Image src={"/profile.jpg"} width={40} height={40} alt="" />
           </div>
         </div>
-        <div className="chat-bubble bg-slate-600 shadow-md text-ellipsis overflow-hidden">
+        <div className="chat-bubble bg-slate-600 hover:bg-slate-500 shadow-md text-ellipsis overflow-hidden">
           {chatsme}
         </div>
       </div>

@@ -24,18 +24,6 @@ const Asside = () => {
       title: "Testing1",
       record: "22-sep-2023",
     },
-    {
-      title: "Testing2",
-      record: "24-sep-2023",
-    },
-    {
-      title: "Testing3",
-      record: "26-sep-2023",
-    },
-    {
-      title: "Testing3",
-      record: "26-sep-2023",
-    },
   ];
   return (
     <>
